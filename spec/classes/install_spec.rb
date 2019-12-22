@@ -6,6 +6,9 @@ describe 'vbox_guest_additions::install' do
       let(:facts) { os_facts }
 
       it { is_expected.to compile }
+
+      it { is_expected.to contain_package('virtualbox-guest-utils-nox').with(ensure: 'absent') }
+      it { is_expected.to contain_package('virtualbox-guest-utils').with(ensure: 'present') }
     end
   end
 end

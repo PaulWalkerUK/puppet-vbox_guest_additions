@@ -2,4 +2,6 @@
 #
 # @api private
 class vbox_guest_additions::install {
+  package { 'virtualbox-guest-utils-nox': ensure => 'absent' }
+  package { 'virtualbox-guest-utils': ensure => 'present' }
 }

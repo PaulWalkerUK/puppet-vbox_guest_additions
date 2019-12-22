@@ -6,6 +6,8 @@ describe 'vbox_guest_additions::service' do
       let(:facts) { os_facts }
 
       it { is_expected.to compile }
+
+      it { is_expected.to contain_service('vboxservice').with(ensure: 'running', enable: true) }
     end
   end
 end
