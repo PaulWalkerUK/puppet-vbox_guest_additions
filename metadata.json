@@ -1,10 +1,12 @@
 {
   "name": "paulwalkeruk-vbox_guest_additions",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Paul Walker",
   "summary": "This module provides simple installation/setup of VirtualBox Guest Additions",
   "license": "Apache-2.0",
   "source": "https://github.com/PaulWalkerUK/puppet-vbox_guest_additions",
+  "project_page": "https://github.com/PaulWalkerUK/puppet-vbox_guest_additions",
+  "issues_url": "https://github.com/PaulWalkerUK/puppet-vbox_guest_additions/issues",
   "dependencies": [
 
   ],
